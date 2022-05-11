@@ -127,7 +127,7 @@ dependencies {
 
 mixin {
     defaultObfuscationEnv 'searge'
-    add sourceSets.main, 'mixins.ExamplePlugin.refmap.json'
+    add sourceSets.main, 'mixins.ByFerroxHighwayHelperPlugin.refmap.json'
 }
 
 processResources {

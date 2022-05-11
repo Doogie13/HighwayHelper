@@ -1,9 +1,8 @@
 {
-  "required": true,
+  "required": false,
   "compatibilityLevel": "JAVA_8",
   "package": "com.lambda.mixins",
-  "refmap": "mixins.ExamplePlugin.refmap.json",
+  "refmap": "mixins.ByFerroxHighwayHelperPlugin.refmap.json",
   "client": [
-    "MixinMinecraft"
   ]
 }
