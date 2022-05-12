@@ -1,6 +1,6 @@
 package com.lambda.modules
 
-import com.lambda.ByFerroxHighwayHelper
+import com.lambda.HighwayHelper
 import com.lambda.client.module.Category
 import com.lambda.client.plugin.api.PluginModule
 import com.lambda.client.util.items.throwAllInSlot
@@ -21,7 +21,7 @@ internal object EmptyShulkerEject : PluginModule(
     name = "EmptyShulkerEject",
     category = Category.MISC,
     description = "Ejects empty shulker boxes.",
-    pluginMain = ByFerroxHighwayHelper
+    pluginMain = HighwayHelper
 ) {
 
     private val delay by setting("Delay", 1, 0..10, 1)
@@ -32,6 +32,9 @@ internal object EmptyShulkerEject : PluginModule(
     init {
 
         safeListener<ClientTickEvent> {
+
+            if (NetherrackEject.active)
+                return@safeListener
 
             if (--ticksLeft <= 0) {
 

@@ -1,11 +1,10 @@
 {
-  "name": "ByFerroxHighwayHelper",
-  "version": "1.0",
+  "name": "HighwayHelper",
+  "version": "1.1",
   "description": "gaming",
   "url": "",
   "authors": [ "Doogie13" ],
-  "main_class": "com.lambda.ByFerroxHighwayHelper",
+  "main_class": "com.lambda.HighwayHelper",
   "min_api_version": "3.0",
-  "mixins": [ "mixins.ByFerroxHighwayHelperPlugin.json" ],
   "required_plugins": []
 }

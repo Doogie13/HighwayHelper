@@ -1,8 +1,0 @@
-{
-  "required": false,
-  "compatibilityLevel": "JAVA_8",
-  "package": "com.lambda.mixins",
-  "refmap": "mixins.ByFerroxHighwayHelperPlugin.refmap.json",
-  "client": [
-  ]
-}

@@ -1,6 +1,6 @@
 package com.lambda.modules
 
-import com.lambda.ByFerroxHighwayHelper
+import com.lambda.HighwayHelper
 import com.lambda.client.event.events.ConnectionEvent
 import com.lambda.client.event.listener.listener
 import com.lambda.client.module.Category
@@ -17,7 +17,7 @@ internal object AutoDisconnect : PluginModule(
     name = "AutoDisconnect",
     category = Category.MISC,
     description = "Automatically disconnect after a certain amount of time.",
-    pluginMain = ByFerroxHighwayHelper
+    pluginMain = HighwayHelper
 ) {
 
     private var disconnectTime = 0L
