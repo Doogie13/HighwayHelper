@@ -26,6 +26,7 @@ internal object EmptyShulkerEject : PluginModule(
 
     private val delay by setting("Delay", 1, 0..10, 1)
     private val announce by setting("Announce", false)
+    private val fiveB by setting("Unstacked", false, description = "Ejects shulkers which are not stacked, useful for 5b5t.org")
 
     private var ticksLeft = 0
 
@@ -44,7 +45,7 @@ internal object EmptyShulkerEject : PluginModule(
 
                     if (stack.item is ItemShulkerBox) {
 
-                        if (isEmpty(stack)) {
+                        if (isEmpty(stack) || fiveB && stack.count == 1) {
 
                             val j = if (i < 9) i + 36 else i
 
