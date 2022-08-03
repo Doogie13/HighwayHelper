@@ -50,9 +50,9 @@ internal object NetherrackEject : PluginModule(
 
                     val i = stacks[keep.coerceIn(0 until stacks.size)]
 
-                    val j = if (i < 9) i + 36 else i
+                    val j : Int = if (i < 9) i + 36 else i
 
-                    throwAllInSlot(j)
+                    throwAllInSlot(NetherrackEject, j)
 
                     ticksLeft = delay
 

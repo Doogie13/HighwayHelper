@@ -49,7 +49,7 @@ internal object EmptyShulkerEject : PluginModule(
 
                             val j = if (i < 9) i + 36 else i
 
-                            throwAllInSlot(j)
+                            throwAllInSlot(EmptyShulkerEject, j)
                             if (announce)
                                 MessageSendHelper.sendChatMessage("Ejected empty shulker box $j")
                             ticksLeft = delay
