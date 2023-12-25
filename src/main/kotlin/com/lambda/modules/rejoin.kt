@@ -13,10 +13,10 @@ import net.minecraft.network.play.server.SPacketDisconnect
 import net.minecraft.util.text.TextComponentString
 import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
 
-internal object AutoDisconnect : PluginModule(
-    name = "AutoDisconnect",
+internal object rejoin : PluginModule(
+    name = "Rejoin",
     category = Category.MISC,
-    description = "Automatically disconnect after a certain amount of time.",
+    description = "Automatically disconnects after a certain amount of time. use reconnect to continue",
     pluginMain = HighwayHelper
 ) {
 
