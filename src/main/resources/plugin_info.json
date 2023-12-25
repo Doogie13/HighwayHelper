@@ -5,6 +5,6 @@
   "url": "",
   "authors": [ "Doogie13" ],
   "main_class": "com.lambda.HighwayHelper",
-  "min_api_version": "3.0",
+  "min_api_version": "3.3",
   "required_plugins": []
 }
